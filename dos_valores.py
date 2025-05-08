@@ -1,17 +1,20 @@
-# Se trata de tomar una lista de dos valores desordenados y producir una salida en orden creciente.
+s = n
+for i in range(6):
+    n.append(int(input()))
 
-n = [65, 23, 39]
-if n[0] > n[1]:
-    a = n[0]
-    n[0] = n[1]
-    n[1] = a
-if n[1] > n[2]:
-    a = n[1]
-    n[1] = n[2]
-    n[2] = a
-if n[0] > n[1]:
-    a = n[0]
-    n[0] = n[1]
-    n[1] = a
+s = n
+for i in range(5):
+    if s[j] > s[j+1]:
+        a = s[j]
+        s[j] = s[j+1]
+        s[j+1] = a
+print(s)
 
-print(n)
+s = n
+for i in range(len(n)-2):
+    for j in range(len(n)-1):
+        if s[j] > s[j+1]:
+            a = s[j]
+            s[j] = s[j+1]
+            s[j +1] = a
+print(s)
